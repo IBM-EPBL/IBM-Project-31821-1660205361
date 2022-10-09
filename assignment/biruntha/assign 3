@@ -1,1 +1,59 @@
+ TAFIC LIGHT
+ Import RPi. GPIO as GPIO
+ from time import sleep
+ 
+ GPIO.setmode(GPIO.BOARD)
+ 
+ red=7
+ yellow=11
+ green=13
+ 
+ GPIO.setup(red,GPIO.OUT)
+ GPIO.setup(yellow,GPIO.OUT)
+ GPIO.setup(green,GPIO.OUT)
+ 
+ while True:
+ 
+ GPIO.putput(red,True)
+ sleep(3)
+ GPIO.output(red,False)
+ 
+ GPIO.putput(yellow,True)
+ sleep(1)
+ GPIO.output(yellow,False)
+ 
+ GPIO.putput(green,True)
+ sleep(3)
+ GPIO.output(green,False)
+ 
+ GPIO.cleanup()
+ 
+ 
+ 
+ LED
+ 
+ 
+ import Rpi.GPIO as GPIO
+ import time
+ 
+ GPIO.setmode(GPIO.BOARD)
+ GPIO.setup(11.GPIO.OUT)
+ 
+ GPIO.output(11,1)
+ time.sleep(1)
+ 
+  GPIO.output(11,0)
+ time.sleep(1)
+ 
+  GPIO.output(11,1)
+ time.sleep(1)
+ 
+  GPIO.output(11,0)
+ time.sleep(1)
+ 
+  GPIO.output(11,1)
+ time.sleep(1)
+ 
+ GPIO.cleanup()
+ 
 
